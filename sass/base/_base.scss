@@ -1,0 +1,45 @@
+@import '../abstract/var';
+/*************************************************************/
+/*                      base/_base.scss                      */
+/*************************************************************/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;   // 1rem = 10px
+}
+
+body {
+    padding: 3rem;
+    min-height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: linear-gradient(to bottom left, $color-primary-light, $color-primary-dark);
+    
+    direction: rtl;
+    font-family: vazir, tahoma, arial,'sans-serif';
+    font-size: 1.4rem;
+}
+
+.body__card {
+    padding: 1rem;
+    flex: 0 1 120rem;
+
+    display: grid;
+    grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] 1fr [full-end];
+
+    background-color: $color-white;
+    border-radius: 2rem;
+
+    @include shadow(normal);
+    height: 10rem;
+}

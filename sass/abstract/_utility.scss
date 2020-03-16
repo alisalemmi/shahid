@@ -1,0 +1,16 @@
+@import 'var';
+// -------- shadow --------- //
+@mixin shadow($type) {
+    @if $type == thin {
+        box-shadow: 0 2rem 5rem rgba($color: $color-black, $alpha: .1);
+    }
+    @else if $type == light {
+        box-shadow: 0 3rem 5rem rgba($color: $color-black, $alpha: .2);
+    }
+    @else if $type == normal {
+        box-shadow: 0 4rem 7rem rgba($color: $color-black, $alpha: .4);
+    }
+    @else if $type == dark {
+        box-shadow: 0 5rem 10rem rgba($color: $color-black, $alpha: .5);
+    }
+}

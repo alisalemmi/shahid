@@ -1,0 +1,19 @@
+/*************************************************************/
+/*                         home.scss                         */
+/*************************************************************/
+
+@import 'abstract/var';
+@import 'abstract/utility';
+
+@import 'base/base';
+@import 'base/typo';
+
+@import 'layout/header';
+@import 'layout/sidebar';
+@import 'layout/slider';
+@import 'layout/news';
+@import 'layout/features';
+@import 'layout/shahidan';
+@import 'layout/gallery';
+@import 'layout/vasiat';
+@import 'layout/footer';
