@@ -1,0 +1,29 @@
+@import '../abstract/var';
+/*************************************************************/
+/*                    component/_btn.scss                    */
+/*************************************************************/
+
+.btn {
+    display: block;
+    padding: 1rem 3rem;
+
+    color: $color-white;
+    background: linear-gradient(to bottom right, $color-primary, $color-primary-dark);
+    // border-radius: 20rem;
+
+    font-size: 1.7rem;
+    text-decoration: none;
+
+    transition: all .3s;
+
+    outline: none;
+
+    &:hover {
+        transform: translateY(-.5rem);
+        @include shadow(thin);
+    }
+
+    &:active {
+        transform: translateY(-.2rem);
+    }
+}
