@@ -4,7 +4,33 @@
 /*************************************************************/
 
 .header {
+    margin: 5rem 1rem 3rem 1rem;
     grid-column: full;
     
-    // background-color: yellowgreen;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    justify-items: center;
+
+    &__img {
+        display: block;
+        width: 90%;
+
+        border-radius: $border-radius;
+        @include shadow(normal);
+    }
+
+    &__content {
+        display: grid;
+        grid-template-rows: 1fr min-content 1fr min-content 1fr;
+
+        .h1 {
+            grid-row-start: 2;
+        }
+        .btn {
+            grid-row-start: 4;
+            justify-self: center; 
+            align-self: center;
+        }
+    }
 }
